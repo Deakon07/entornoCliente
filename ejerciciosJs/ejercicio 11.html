@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 11</title>
+  </head>
+  <body>
+    <script>
+      let nombre = prompt("Introduce tu nombre");
+      let apellidos = prompt("Introduce tus apellidos");
+      let salario = prompt("Introduce tu salario");
+      let edad = prompt("Introduce tu edad");
+
+      let salConver = Number(salario);
+      if (salConver > 2000) {
+        document.write("el salario no cambia");
+      } else if (salConver >= 1000 && salConver <= 2000) {
+        if (edad > 45) {
+          document.write(salConver + salConver * 0.03);
+        } else if (edad <= 45) {
+          document.write(salConver + salConver * 0.1);
+        }
+      } else {
+        if (edad < 30) {
+          document.write("Cobrarás 1100 €");
+        } else if (edad > 30 && edad <= 45) {
+          document.write(salConver + salConver * 0.03);
+        } else {
+          document.write(salConver + salConver * 0.15);
+        }
+      }
+    </script>
+  </body>
+</html>
