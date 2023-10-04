@@ -7,14 +7,12 @@
   </head>
   <body>
     <script>
-      let number;
-      while (isNaN(number) || number < 0) {
-        number = prompt("Introduce un numero");
-        if (isNaN(number)) {
-          alert("Debe ser un numero");
-        } else if (number < 0) {
-          alert("Debe ser un numero positivo");
+      var number;
+      for (let i = 0; i < 5; i++) {
+        for (number = 5; number > i; number--) {
+          document.write(number);
         }
+        document.write("<br>");
       }
     </script>
   </body>
