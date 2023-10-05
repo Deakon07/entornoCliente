@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 20</title>
+</head>
+<body>
+    <script>
+        let sueldo= prompt("introduce tu sueldo");
+        let antiguedad = prompt("introduce tu antigüedad");
+
+        let sueldoConvertido = Number(sueldo);
+        if(sueldo<500 && antiguedad>= 10){
+            document.write(`Tu sueldo es: ${sueldoConvertido + sueldoConvertido*0.20}`);
+
+        }else if(sueldo<500 && antiguedad<10){
+            document.write(`Tu sueldo es: ${sueldoConvertido + sueldoConvertido*0.05}`);
+        }else{
+            document.write(`Tu sueldo es:  ${sueldoConvertido}`);
+        }
+    </script>
+</body>
+</html>

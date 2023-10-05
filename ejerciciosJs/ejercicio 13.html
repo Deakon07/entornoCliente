@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 13</title>
+</head>
+<body>
+    <script>
+        var numero1;
+        var numero2;
+        var numero3;
+
+
+        
+        
+        while (isNaN(numero1) || isNaN(numero2) || isNaN(numero3) || numero1 < 0 || numero2 < 0 || numero3 < 0) {
+            alert("introduce 3 numeros");
+            
+            numero1= prompt("introduce el 1er numero");
+            var numberCon1 = Number(numero1);
+            numero2= prompt("introduce el 2do numero");
+            var numberCon2 =   Number(numero2);
+            numero3= prompt("introduce el 3er numero");
+            var numberCon3 = Number(numero3);
+        
+        
+        if (isNaN(numero1) || isNaN(numero2) || isNaN(numero3)) {
+                alert("Deben ser numeros no letras");
+            } else if (numero1 < 0 || numero2 < 0 || numero3 < 0) {
+                alert("Deben ser numeros positivos");
+            }
+        }
+      
+
+        var suma =  numberCon1 + numberCon2 + numberCon3;
+        let media = (suma/ 3).toFixed(2);
+
+        if(media >= 7){
+            document.write("Promocionado");
+
+        }else{
+            document.write("No promocionado");
+        }
+
+    </script>
+</body>
+</html>
