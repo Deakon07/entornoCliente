@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 15</title>
+  </head>
+  <body>
+    <script>
+      let pregunta = confirm("¿Quieres abrir una nueva ventana?");
+
+      if (pregunta == 1) {
+        let nuevaVentana = window.open(
+          "",
+          "nuevaVentana",
+          "toolbar=no,location=no,menubar=no,width=200,height=80,resizable= yes,scrollbars= yes,top= 500,left = 500"
+        );
+        nuevaVentana.document.write("Hola pringao");
+      }
+    </script>
+  </body>
+</html>

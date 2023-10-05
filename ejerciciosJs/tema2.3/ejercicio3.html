@@ -15,7 +15,7 @@
         mes = prompt("Introduce el mes de tu cumpleaños");
       } while (isNaN(mes) || mes <= 0 || mes > 12);
 
-      var fechaCumple = new Date(fechaUsuario, mes, dia);
+      var fechaCumple = new Date(2023, mes, dia);
 
       for (let i = 2023; i < 2100; i++) {
         if (fechaCumple.getDay() == 0) {
