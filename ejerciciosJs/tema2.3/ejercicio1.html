@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 1</title>
+  </head>
+  <body>
+    <script>
+      let fecha = new Date();
+      let fechaCumple = new Date(1984, 9, 30);
+
+      document.write(fecha.toLocaleDateString() + "<br>");
+      document.write(fechaCumple.toLocaleDateString() + "<br>");
+      document.write(fecha.getFullYear() + "<br>");
+      document.write(fechaCumple.getFullYear() + "<br>");
+      fecha.setFullYear(2022);
+      document.write(fecha + "<br>");
+      document.write(fecha.toLocaleDateString() + "<br>");
+    </script>
+  </body>
+</html>
