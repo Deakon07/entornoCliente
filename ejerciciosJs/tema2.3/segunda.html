@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Segunda</title>
-</head>
-<body>
+  </head>
+  <body>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+
     <h2>Página secundaria</h2>
 
-    <input type="button" value="Botón 1" onclick="document.body.style.backgroundColor = 'green';">
-    <input type="button" value="Botón 2" onclick="window.opener.document.body.style.backgroundColor = 'red';">
-    <input type="button" value="Botón 3" onclick="window.opener.segunda.close(); window.opener.close()" >
-
-
-
-</body>
+    <input
+      type="button"
+      value="Botón 1"
+      onclick="document.body.style.backgroundColor = 'green';"
+    />
+    <input
+      type="button"
+      value="Botón 2"
+      onclick="window.opener.document.body.style.backgroundColor = 'red';"
+    />
+    <input
+      type="button"
+      value="Botón 3"
+      onclick="window.close(); window.opener.close()"
+    />
+  </body>
 </html>

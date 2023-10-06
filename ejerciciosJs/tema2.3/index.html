@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página principal</title>
-</head>
-<body>
+  </head>
+  <body>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+
     <h1>Página principal</h1>
 
-    <input type="button" value="Botón 1" onclick="window.open('segunda.html', 'segunda', 'width=300,height=400,left=400,top=400');">
-    <input type="button" value="Botón 2" onclick="window.close();">
-    <input type="button" value="Botón 3" onclick="window.moveBy(200, 100);">
-    <input type="button" value="Botón 4" onclick="window.moveTo(500, 200);">
-    <input type="button" value="Botón 5" onclick="window.resizeBy(100, 100);">
-    <input type="button" value="Botón 6" onclick="window.resizeTo(100, 150);">
-</body>
+    <input
+      type="button"
+      value="Botón 1"
+      onclick="segunda= window.open('segunda.html', 'segunda', 'width=300,height=400,left=400,top=400');"
+    />
+    <input type="button" value="Botón 2" onclick="segunda.close();" />
+    <input type="button" value="Botón 3" onclick="segunda.moveBy(200, 100);" />
+    <input type="button" value="Botón 4" onclick="segunda.moveTo(500, 200);" />
+    <input
+      type="button"
+      value="Botón 5"
+      onclick="segunda.resizeBy(100, 100);"
+    />
+    <input
+      type="button"
+      value="Botón 6"
+      onclick="segunda.resizeTo(100, 150);"
+    />
+  </body>
 </html>
-
-
-
