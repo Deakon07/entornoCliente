@@ -2,8 +2,6 @@
 const pantallaAlto = window.innerHeight;
 const pantallaAncho = window.innerWidth;
 
-
-
 for (let i = 0; i < 2000; i++) {
   //Posición Top y Left aleatorias
   let posicionTop = Math.floor(Math.random() * pantallaAlto);
@@ -11,8 +9,14 @@ for (let i = 0; i < 2000; i++) {
   //Colores RGB aleatorios desde 0 hasta 255
   let ramdonRed = Math.floor(Math.random() * 256);
   let ramdonGreen = Math.floor(Math.random() * 256);
-  let randomBlue = Math.floor(Math.random() * 256);
-  document.write(document.getElementById("recuadro").style.backgroundColor(rgb(ramdonRed, ramdonGreen, ramdonBlue)));
-  document.write(document.getElementById("recuadro").style.top = posicionTop);
-  document.write(document.getElementById("recuadro").style.left = posicionLeft);
+  let ramdonBlue = Math.floor(Math.random() * 256);
+  document.write(
+    document
+      .getElementById("recuadro")
+      .style.backgroundColor(rgb(ramdonRed, ramdonGreen, ramdonBlue))
+  );
+  document.write((document.getElementById("recuadro").style.top = posicionTop));
+  document.write(
+    (document.getElementById("recuadro").style.left = posicionLeft)
+  );
 }

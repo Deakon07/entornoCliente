@@ -21,10 +21,10 @@ function abrirVentana() {
   nuevaVentana = window.open(
     "",
     "nuevaVentana",
-    "toolbar=no,location=no,menubar=no,width=300,height=300,resizable= yes,scrollbars= yes,top= 500,left = 500"
+    "toolbar=no,location=no,menubar=no,width=300px,height=300px"
   );
   nuevaVentana.document.write("<p>Hora actual</p>");
-  setTimeout(cerrarInterval, 5000);
+  setTimeout(pararUpdate, 5000);
   setTimeout(cerrarVentana, 10000);
 }
 
@@ -35,7 +35,7 @@ function actualizarReloj() {
 
 var update = setInterval(actualizarReloj, 1000);
 
-function cerrarInterval() {
+function pararUpdate() {
   clearInterval(update);
 }
 
