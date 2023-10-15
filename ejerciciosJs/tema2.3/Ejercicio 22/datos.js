@@ -10,7 +10,7 @@ function datosPadre() {
   var fechaActual = new Date();
   var anoActual= fechaActual.getFullYear();
   
-  window.opener.document.write("Los años bisiestos  entre tu fecha de nacimiento y el año actual son:<br>");
+  window.opener.document.write("Los años bisiestos entre tu fecha de nacimiento y el año actual son:<br>");
 
   for (let i = fechaUsuario.getFullYear(); i <= anoActual; i++) {
     if ((i % 4 === 0 && i % 100 !== 0) || i % 400 === 0) {
