@@ -4,10 +4,10 @@ function cuadrado(number) {
 }
 console.log("Función tradicional " + cuadrado(5));
 
-var cuadrado2 = function (number) {
+var anonima = function (number) {
   return number * number;
 };
-console.log("Función anónima " + cuadrado2);
+console.log("Función anónima " + anonima(5));
 
 var cuadradoFlecha = (number) => {
   return number * number;
