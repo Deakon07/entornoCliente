@@ -3,18 +3,21 @@ function abrirPagina() {
 }
 
 function datosPadre() {
-  window.open("window.html", "padre");
-  window.opener.document.write(escribirEnPadre.nombre.value + " " + escribirEnPadre.apellidos.value +"<br>");
+  var nombre = escribirEnPadre.nombre.value;
+  var apellido = escribirEnPadre.apellidos.value;
   var fechaUsuario = new Date(escribirEnPadre.FechaNacimiento.value);
-  window.opener.document.write(`${fechaUsuario.getDate()} / ${fechaUsuario.getMonth()+1} / ${fechaUsuario.getFullYear()} <br>`);
-  var fechaActual = new Date();
-  var anoActual= fechaActual.getFullYear();
-  
-  window.opener.document.write("Los años bisiestos entre tu fecha de nacimiento y el año actual son:<br>");
+  var fecha = fechaUsuario.toLocaleDateString();
 
+  var todo = `${nombre} ${apellido} ${fecha}`;
+
+  var anos = "";
   for (let i = fechaUsuario.getFullYear(); i <= anoActual; i++) {
     if ((i % 4 === 0 && i % 100 !== 0) || i % 400 === 0) {
-    window.opener.document.write(i + "<br>");
+      anos = anos + " " + i + "<br>";
+    }
   }
-}
+  window.opener.document.getElementById("p1").innerHTML =
+    todo +
+    "Los años bisiestos entre tu fecha de nacimiento y el año actual son:<br>" +
+    anos;
 }
