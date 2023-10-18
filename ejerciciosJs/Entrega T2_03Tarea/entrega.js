@@ -22,6 +22,7 @@ function comenzar() {
             clearInterval(primerBoton);
         }
         
+        
     }
 
    
