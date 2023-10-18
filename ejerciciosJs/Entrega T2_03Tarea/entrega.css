@@ -14,55 +14,68 @@ body, html {
 }
 
 .boton-comenzar {
-    background-color: #f5a30b; 
+    background-color: #f7c005;
     display: flex;
-    border-radius: 5px;
     justify-content:center;
+    border-radius: 5px;
     margin-top: 20px; 
     gap:8px;
+    padding: 10px;
 
 
 }
 .boton-empate {
-    background-color: #33FF57; 
+    background-color: #126efd; 
     display: flex;
     justify-content:center;
+    border-radius: 5px;
     justify-content:space-between;
     margin-top: 20px; 
     padding: auto;
+    color:white;
+    padding: 10px;
+    
 }
 
 .boton-correr {
-    background-color: #33FF57; 
+    background-color:#1b8755; 
     display: flex;
     justify-content:center;
+    border-radius: 5px;
     justify-content:space-between;
     margin-top: 20px; 
     padding: auto;
+    color:white;
+    padding: 10px;
 }
 
 .boton-stop {
-    background-color: #33FF57; 
+    background-color: #fffcfd; 
     display: flex;
     justify-content:center;
+    border-radius: 5px;
+    border-color:red;
     justify-content:space-between;
     margin-top: 20px; 
     padding: auto;
+    color:red;
+    padding: 10px;
 }
 
 
-.coches img {
-    width: 100px;
-    height: 100px;
-    position: absolute; 
-}
 
 #cocheRojo {
-    top: 50px; 
-    left: 100px; 
+    top: 90px; 
+    left: 3px; 
+    position: absolute;
+    height: 70px;
+    width: 100px;
 }
 
 #cocheAzul {
-    top: 150px; 
-    left: 200px; 
+    top: 200px; 
+    left: 3px; 
+    position: absolute;
+    height: 70px;
+    width: 100px;
 }
