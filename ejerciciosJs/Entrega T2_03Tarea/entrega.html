@@ -1,21 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="entrega.css">
-    <script type="text/javascript" src="entrega.js"></script>
-</head>
-<body>
+  <head>
+    <link rel="stylesheet" href="entrega.css" />
+    <script type="text/javascript" src="./entrega.js"></script>
+  </head>
+  <body>
     <div class="circuito"></div>
-    <div><input type="button" class="boton-comenzar" value="COMENZAR" onclick="comenzar()"></div>
-<div class="botones-secundarios">
-    <input type="button" class="boton-empate" value="EMPATE!" onclick="empate()">
-    <input type="button" class="boton-correr" value="A CORRER!" onclick="correr()">
-    <input type="button" class="boton-stop" value="stop!!!" onclick="stop()">
-</div>
+    <div>
+      <input
+        type="button"
+        class="boton-comenzar"
+        value="COMENZAR"
+        onclick="comenzar()"
+      />
+    </div>
+    <div class="botones-secundarios">
+      <input
+        type="button"
+        class="boton-empate"
+        value="EMPATE!"
+        onclick="empatar()"
+      />
+      <input
+        type="button"
+        class="boton-correr"
+        value="A CORRER!"
+        onclick="carrera()"
+      />
+      <input
+        type="button"
+        class="boton-stop"
+        value="stop!!!"
+        onclick="stop()"
+      />
+    </div>
 
-    <img id="cocheRojo" name= "cocheRojo" src="/Entrega T2_03Tarea/images/coche rojo.png" alt="cocheRojo">
-    <img id="cocheAzul" name= "cocheAzul" src="/Entrega T2_03Tarea/images/coche azul.png" alt="cocheAzul">
-    
-    
-</body>
+    <img
+      id="cocheRojo"
+      name="cocheRojo"
+      src="./images/coche rojo.png"
+      alt="cocheRojo"
+    />
+    <img
+      id="cocheAzul"
+      name="cocheAzul"
+      src="./images/coche azul.png"
+      alt="cocheAzul"
+    />
+  </body>
 </html>
