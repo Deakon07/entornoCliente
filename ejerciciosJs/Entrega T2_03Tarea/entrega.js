@@ -2,27 +2,60 @@
 const pantallaAlto = window.innerHeight;
 const pantallaAncho = window.innerWidth;
 
-// Averiguamos la posición inicial (X, Y) de los coches obteniendo las imágenes por su ID.
-var cocheRojo = document.getElementById('cocheRojo');
-var RojoPosY = cocheRojo.offsetTop;  // Posición vertical Y
-var RojoPosX = cocheRojo.offsetLeft; // Posición horizontal X
+// Averiguamos la posición inicial (X) de los coches obteniendo las imágenes por su ID.
 
-var cocheAzul = document.getElementById('cocheAzul');
-var AzulPosY = cocheAzul.offsetTop;  // Posición vertical Y
-var AzulPosX = cocheAzul.offsetLeft; // Posición horizontal X
+var SalidaRojoX;
+var SalidaAzulX;
+var cocheAzul;
+var cocheRojo;
 
-var primerBoton= setInterval(comenzar,1000);
+window.onload = ()=>{
+cocheRojo = document.getElementById('cocheRojo');
+SalidaRojoX = cocheRojo.offsetLeft; // Posición horizontal X
+cocheAzul = document.getElementById('cocheAzul');
+SalidaAzulX = cocheAzul.offsetLeft; // Posición horizontal X
+}
+
 
 function comenzar() {
-    if (RojoPosX < pantallaAncho && AzulPosX < pantallaAncho) {
-            RojoPosX= RojoPosX + 1;  // Mueve el coche rojo hacia la derecha
-            AzulPosX= AzulPosX + 2;  // Mueve el coche azul hacia la derecha
-    } else {
-            // Los coches han llegado al final, detenemos el intervalo
-            clearInterval(primerBoton);
+        cocheRojo.style.left= "0px";   
+        cocheAzul.style.left= "0px";  
+    }
+    
+var segundoBoton= setInterval(empate,40);
+function empate() {
+        if (SalidaRojoX <= pantallaAncho && SalidaAzulX <= pantallaAncho) {
+            //Posición incrementando 8 la velocidad
+            SalidaRojoX = SalidaRojoX +8;
+            cocheRojo.style.left= SalidaRojoX +"px";
+            //Posición incrementando 8 la velocidad
+            cocheAzul.style.left= SalidaAzulX +8;
+            cocheAzul.style.left= SalidaAzulX + "px";
+        }
+        if(SalidaRojoX == pantallaAncho && SalidaAzulX == pantallaAncho){
+            cocheRojo.style.left= "0px";   
+        cocheAzul.style.left= "0px";  
         }
         
-        
+
     }
+
+var tercerBoton= setInterval(correr,40);
+function correr() {
+    if (SalidaRojoX <= pantallaAncho && SalidaAzulX <= pantallaAncho) {
+        //Posición incrementando 5 la velocidad
+        cocheRojo.style.left= SalidaRojoX+"5px";
+        //Posición incrementando 8 la velocidad
+        cocheAzul.style.left= SalidaAzulX+"8px";
+    }
+    correr();
+}
+
+function stop(){
+
+    clearInterval(tercerBoton);
+    clearInterval(segundoBoton);
+}
+
 
    

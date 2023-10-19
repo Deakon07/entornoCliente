@@ -4,7 +4,7 @@ body, html {
 }
 
 .circuito {
-    background-image: url("/ejerciciosJs/Entrega T2_03Tarea/images/Circuito.png");
+    background-image: url("/Entrega T2_03Tarea/images/Circuito.png");
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -65,8 +65,8 @@ body, html {
 
 
 #cocheRojo {
-    top: 90px; 
-    left: 3px; 
+    top: 100px; 
+    left: 0px; 
     position: absolute;
     height: 70px;
     width: 100px;
@@ -74,8 +74,8 @@ body, html {
 
 
 #cocheAzul {
-    top: 200px; 
-    left: 3px; 
+    top: 220px; 
+    left: 0px; 
     position: absolute;
     height: 70px;
     width: 100px;
