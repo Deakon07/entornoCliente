@@ -13,26 +13,28 @@ for (let i = 0; i < 5; i++) {
 }
 //console.log(alumnos);
 
-var textarea= document.mostrarNotas;
 aprobadoGral=() =>{
- alumnos.forEach( element, index);{
-    alumnos[element]= 5;
- }
-
+    alumnos.forEach( element, index);{
+        alumnos[element]= 5;
+    }
+    
 }
 
 actualizarNotas=() =>{
     var nombre=prompt=("¿A quien quieres cambiarle la nota?");
     var nota=prompt=("¿Qué nota quieres ponerle?");
-        if(nuevoArray= alumnos.filter("nombre")){
-               alumnos[nombre]= nota;
+    alumnos.forEach((e) =>{
+        if(alumnos.filter("nombre")){
+            alumnos[nombre]= nota;
         }
-    }
-
+ console.log(e);
+});
+}
 
 verNotas =()=>{
+    mostrarNotas= "";
     alumnos.forEach(element => {
-       textarea.value = element;
+        mostrarNotas.document.write(`${element} <br>`);
     });
 }
 
