@@ -1,21 +1,17 @@
 var suma;
-let salarios = {
+let salarios = { 
   John: 100,
   Ann: 160,
   Peter: 130,
-  sumaSalarios: function () {
-    if (salarios.suma == "") {
-      console.log(
-        `La suma de todos lo salarios es: ${salarios.sumaSalarios()}`
-      );
-    } else {
-      suma =
-        parseInt(salarios.John) +
-        parseInt(salarios.Ann) +
-        parseInt(salarios.Peter);
-      console.log(
-        `La suma de todos lo salarios es: ${salarios.sumaSalarios()}`
-      );
-    }
-  },
 };
+
+var suma=0;
+for (let i in salarios) { 
+  if (salarios[i]==""){
+    console.log (`La suma de todos los salarios es: 0`);
+  }else{
+    suma=suma+salarios[i];
+  }
+}
+console.log (`La suma de todos los salarios es: ${suma}`);
+
