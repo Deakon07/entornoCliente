@@ -1,51 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="es_ES">
+<head>
     <link rel="stylesheet" href="entrega.css" />
-    <script type="text/javascript" src="./entrega.js"></script>
-  </head>
-  <body>
-    <div class="circuito"></div>
-    <div>
-      <input
-        type="button"
-        class="boton-comenzar"
-        value="COMENZAR"
-        onclick="comenzar()"
-      />
-    </div>
-    <div class="botones-secundarios">
-      <input
-        type="button"
-        class="boton-empate"
-        value="EMPATE!"
-        onclick="empatar()"
-      />
-      <input
-        type="button"
-        class="boton-correr"
-        value="A CORRER!"
-        onclick="carrera()"
-      />
-      <input
-        type="button"
-        class="boton-stop"
-        value="stop!!!"
-        onclick="stop()"
-      />
+    <script type="text/javascript" src="./entrega2.js"></script>
+</head>
+<body>
+    <img class="circuito" src="./images/Circuito.png" alt="Circuito" />
+
+    <div class="contenedorSuperior">
+        <input type="button" class="botonComenzar" value="COMENZAR" onclick="comenzar()">
     </div>
 
-    <img
-      id="cocheRojo"
-      name="cocheRojo"
-      src="./images/coche rojo.png"
-      alt="cocheRojo"
-    />
-    <img
-      id="cocheAzul"
-      name="cocheAzul"
-      src="./images/coche azul.png"
-      alt="cocheAzul"
-    />
-  </body>
+    <div class="contenedorInferior">
+        <input type="button" class="botonEmpate"  value="EMPATE!" onclick="empatar()">
+        <input type="button" class="botonCorrer" value="A CORRER" onclick="carrera()">
+        <input type="button" class="botonStop" value="stop!!!" onclick="stop()">
+    </div>
+
+    <img id="cocheRojo" name="cocheRojo" src="./images/coche rojo.png" alt="cocheRojo" />
+    <img id="cocheAzul" name="cocheAzul" src="./images/coche azul.png" alt="cocheAzul" />
+</body>
 </html>

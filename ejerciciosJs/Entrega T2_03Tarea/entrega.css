@@ -13,54 +13,56 @@ html {
   margin-bottom: 30px;
 }
 
-.boton-comenzar {
+.botonComenzar {
   background-color: #f7c005;
-  display: flex;
-  justify-content: center;
   border-radius: 5px;
   margin-top: 20px;
   gap: 8px;
   padding: 10px;
 }
-.boton-empate {
+
+.botonEmpate {
   background-color: #126efd;
-  display: flex;
-  justify-content: center;
   border-radius: 5px;
-  justify-content: space-between;
   margin-top: 20px;
-  padding: auto;
-  color: white;
   padding: 10px;
+  color: white;
 }
 
-.boton-correr {
+.botonCorrer {
   background-color: #1b8755;
-  display: flex;
-  justify-content: center;
   border-radius: 5px;
-  justify-content: space-between;
   margin-top: 20px;
-  padding: auto;
-  color: white;
   padding: 10px;
+  color: white;
 }
 
-.boton-stop {
-  background-color: #fffcfd;
-  display: flex;
-  justify-content: center;
+.botonStop {
+  background-color: white;
   border-radius: 5px;
   border-color: red;
-  justify-content: space-between;
   margin-top: 20px;
-  padding: auto;
-  color: red;
   padding: 10px;
+  color: red;
 }
 
+
+.contenedorSuperior {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contenedorInferior {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  gap: 5px
+}
+
+
 #cocheRojo {
-  top: 100px;
+  top: 90px;
   left: 0px;
   position: absolute;
   height: 70px;
@@ -68,7 +70,7 @@ html {
 }
 
 #cocheAzul {
-  top: 220px;
+  top: 190px;
   left: 0px;
   position: absolute;
   height: 70px;

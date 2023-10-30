@@ -4,14 +4,15 @@ let menu = {
     title: "Mi menu"
 };
 
-multiplyNumeric=(menu)=>{
+multiplyNumeric(menu);
+
+function multiplyNumeric(menu){
     for (let i in menu) { 
-        if(!isNaN(i)){
-          i=  i*2;
+        if(typeof menu[i] == "number"){
+            menu[i]= menu[i]*2;
         }
     }
     console.log(menu);
 };
 
-multiplyNumeric(menu);
 
