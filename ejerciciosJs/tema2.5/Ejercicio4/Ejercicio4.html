@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 4</title>
+    <script rel="text/javascript" src="Ejercicio4.js"></script>
+  </head>
+  <body>
+    <p>
+      <input type="button" value="Aprobado general" onclick="aprobadoGral()" />
+    </p>
+    <p>
+      <input
+        type="button"
+        value="Actualizar nota"
+        onclick="actualizarNotas()"
+      />
+    </p>
+    <p>
+      <input
+        type="button"
+        value="Mostrar notas actuales"
+        onclick="verNotas()"
+      />
+    </p>
+
+    <form name="formulario">
+      <p>
+        <textarea
+          name="mostrarNotas"
+          id="mostrarNotas"
+          placeholder="Aquí aparecerán las notas"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </p>
+    </form>
+  </body>
+</html>

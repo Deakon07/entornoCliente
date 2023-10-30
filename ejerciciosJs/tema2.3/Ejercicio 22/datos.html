@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datos</title>
+    <script src="datos.js"></script>
+  </head>
+  <body>
+    <form name="escribirEnPadre">
+      <p>
+        <label for="nombre"
+          >Nombre:<input type="text" name="nombre" id="nombre" />
+        </label>
+      </p>
+      <p>
+        <label for="apellidos"
+          >Apellidos:<input type="text" name="apellidos" id="apellidos" />
+        </label>
+      </p>
+      <p>
+        <label for="FechaNacimiento"
+          >Fecha de nacimiento:
+          <input type="date" name="FechaNacimiento" id="FechaNacimiento"
+        /></label>
+      </p>
+      <input type="button" value="Mostrar" onclick="datosPadre()" />
+    </form>
+  </body>
+</html>
